@@ -6,9 +6,6 @@
   "main": "app.js",
   "author": "Nigel Poulton <nigelpoulton@hotmail.com>",
   "license": "You'd have to be mad to use this in production :-D",
-  "scripts": {
-    "test": "mocha"
-  },
   "dependencies": {
     "express": "^3.2.4",
     "mocha": "^4.0.1",
