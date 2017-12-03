@@ -34,7 +34,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
         
       # run tests!
-      - run: mocha
+      - run: yarn test
   
       # build the application image
       - run: docker build -t maplion/pluralsight-docker-CI:master
