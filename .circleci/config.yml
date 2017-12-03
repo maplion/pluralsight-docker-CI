@@ -59,6 +59,6 @@ jobs:
 
       - deploy: 
           command: |
-            $DOCKER_HUB_TRIGGER
+            curl -H "Content-Type: application/json" --data '{"build":true}' - X POST https://registry.hub.docker.com/u/maplion/pluralsight-docker-ci/trigger/3717b882-779e-48d6-a785-e77065c48ad8/
 
 
