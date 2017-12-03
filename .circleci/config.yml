@@ -35,10 +35,9 @@ jobs:
         
       # run tests!
       - run: yarn test
-build:
-    steps:
+
       # build the application image
-      - run: docker build -t maplion/pluralsight-docker-ci:master .
+      - run: docker build
 
       # deploy the image
       - run: docker push maplion/pluralsight-docker-ci:master
