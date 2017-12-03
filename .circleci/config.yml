@@ -57,6 +57,7 @@ jobs:
       #       # docker login -u $DOCKER_LOGIN -p $DOCKER_PASSWORD
       #       docker push maplion/pluralsight-docker-ci:$TAG
 
-      - deploy: $DOCKER_HUB_TRIGGER
+      - deploy: 
+        command: $DOCKER_HUB_TRIGGER
 
 
