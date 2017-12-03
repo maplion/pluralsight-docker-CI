@@ -58,7 +58,7 @@ jobs:
       #       docker push maplion/pluralsight-docker-ci:$TAG
 
       - deploy: 
-        command: |
-          $DOCKER_HUB_TRIGGER
+          command: |
+            $DOCKER_HUB_TRIGGER
 
 
