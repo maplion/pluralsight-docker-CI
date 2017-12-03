@@ -37,10 +37,11 @@ jobs:
       - run: yarn test
     
   deploy:
-    dockerhub:
-      branch: master
-      commands:
-        - $DOCKER_HUB_TRIGGER
+    - dockerhub:
+        - branch: 
+          - master
+        - commands:
+          - $DOCKER_HUB_TRIGGER
 
 
 
