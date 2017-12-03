@@ -40,8 +40,8 @@ jobs:
     dockerhub:
         branch: 
           - master
-        commands:
-          - $DOCKER_HUB_TRIGGER
-
+    steps:
+      - run:
+          command: $DOCKER_HUB_TRIGGER
 
 
