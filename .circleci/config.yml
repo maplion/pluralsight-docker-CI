@@ -38,8 +38,7 @@ jobs:
     
   deploy:
     docker:
-        branch: 
-          - master
+        branch: master
     steps:
       - run:
           command: $DOCKER_HUB_TRIGGER
