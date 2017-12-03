@@ -36,12 +36,12 @@ jobs:
       # run tests!
       - run: yarn test
   
-  # build the application image
-  - run: docker build -t maplion/pluralsight-docker-CI:master
+      # build the application image
+      - run: docker build -t maplion/pluralsight-docker-CI:master
 
-  # deploy the image
-  - run: docker push maplion/pluralsight-docker-CI:master
+      # deploy the image
+      - run: docker push maplion/pluralsight-docker-CI:master
 
-  - run: $DOCKER_HUB_TRIGGER
+      - run: $DOCKER_HUB_TRIGGER
 
 
