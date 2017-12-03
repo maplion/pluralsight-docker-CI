@@ -37,7 +37,7 @@ jobs:
       - run: yarn test
     
   deploy:
-    dockerhub:
+    docker:
         branch: 
           - master
     steps:
